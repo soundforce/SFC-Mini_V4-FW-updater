@@ -24,27 +24,16 @@ string firmware_version_received;
 vector<unsigned char> message_in;
 bool message_came_in = 0;
 
+//MIDI messages incoming callback function, to read the firmware version in the device
 void MIDI_IN_CALLBACK( double deltatime, std::vector< unsigned char > *message, void */*userData*/ )
 {
-    //cout << "message in of size " << message->size() << endl;
-    //getting firmware version
     if((int)message->at(0) == 210){
-        
-        /*
-         int byte = (int)message->at(1);
-         //cout << "other byte " << byte << endl;
-         stringstream ss;
-         ss << byte/10;
-         ss << ".";
-         ss << byte-10;
-         string firmware_version_received = ss.str();
-         cout << firmware_version_received << endl;
-         */
         message_came_in = 1;
         memcpy(&message_in, message, sizeof(*message));
     }
 }
 
+//Button on click function to open the github page
 void buttonClicked() // [9]
 {
     cout << "button" << endl;

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="fyG3Uh" name="SFC-Mini_V4-FW-updater" projectType="guiapp"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="tweaEZ" name="SFC-Mini_V4-FW-updater">
+    <GROUP id="{9FBD0AEA-BC43-A73E-DBEC-C24CB329135C}" name="bin">
+      <FILE id="bYF4rR" name="libcrypto.1.0.0.dylib" compile="0" resource="0"
+            file="bin/libcrypto.1.0.0.dylib" xcodeResource="1"/>
+      <FILE id="tuBjNX" name="libCubeProgrammer_API.1.0.0.dylib" compile="0"
+            resource="0" file="bin/libCubeProgrammer_API.1.0.0.dylib" xcodeResource="1"/>
+      <FILE id="KDmUTY" name="libCubeProgrammer_API.1.0.dylib" compile="0"
+            resource="0" file="bin/libCubeProgrammer_API.1.0.dylib" xcodeResource="1"/>
+      <FILE id="UCswXX" name="libCubeProgrammer_API.1.dylib" compile="0"
+            resource="0" file="bin/libCubeProgrammer_API.1.dylib" xcodeResource="1"/>
+      <FILE id="Eyw4fL" name="libCubeProgrammer_API.dylib" compile="0" resource="0"
+            file="bin/libCubeProgrammer_API.dylib" xcodeResource="1"/>
+      <FILE id="oJcPBb" name="libFileManager.1.0.0.dylib" compile="0" resource="0"
+            file="bin/libFileManager.1.0.0.dylib" xcodeResource="1"/>
+      <FILE id="Y4uQ48" name="libFileManager.1.0.dylib" compile="0" resource="0"
+            file="bin/libFileManager.1.0.dylib" xcodeResource="1"/>
+      <FILE id="Niron4" name="libFileManager.1.dylib" compile="0" resource="0"
+            file="bin/libFileManager.1.dylib" xcodeResource="1"/>
+      <FILE id="YGmpHd" name="libFileManager.dylib" compile="0" resource="0"
+            file="bin/libFileManager.dylib" xcodeResource="1"/>
+      <FILE id="xVEq4g" name="libhsmp11.dylib" compile="0" resource="0" file="bin/libhsmp11.dylib"
+            xcodeResource="1"/>
+      <FILE id="sE2sku" name="libssl.1.0.0.dylib" compile="0" resource="0"
+            file="bin/libssl.1.0.0.dylib" xcodeResource="1"/>
+      <FILE id="LuGkhE" name="libSTLinkUSBDriver.dylib" compile="0" resource="0"
+            file="bin/libSTLinkUSBDriver.dylib" xcodeResource="1"/>
+      <FILE id="dTAf6C" name="libstP11_SAM.dylib" compile="0" resource="0"
+            file="bin/libstP11_SAM.dylib" xcodeResource="1"/>
+      <FILE id="ChXJ3S" name="libstP11_SAM.dylib.conf" compile="0" resource="0"
+            file="bin/libstP11_SAM.dylib.conf" xcodeResource="1"/>
+      <FILE id="UtZUeQ" name="libusb-1.0.0.dylib" compile="0" resource="0"
+            file="bin/libusb-1.0.0.dylib" xcodeResource="1"/>
+      <FILE id="Zs1Gi1" name="libxerces-c-3.2.dylib" compile="0" resource="0"
+            file="bin/libxerces-c-3.2.dylib" xcodeResource="1"/>
+      <FILE id="a0GfUX" name="STM32_Programmer_CLI" compile="0" resource="0"
+            file="bin/STM32_Programmer_CLI" xcodeResource="1"/>
+      <FILE id="h5MUq7" name="STM32CubeProgrammer" compile="0" resource="0"
+            file="bin/STM32CubeProgrammer" xcodeResource="1"/>
+      <FILE id="CPQ7Ok" name="STM32MP_KeyGen_CLI" compile="0" resource="0"
+            file="bin/STM32MP_KeyGen_CLI" xcodeResource="1"/>
+      <FILE id="rV4fIY" name="STM32MP_SigningTool_CLI" compile="0" resource="0"
+            file="bin/STM32MP_SigningTool_CLI" xcodeResource="1"/>
+    </GROUP>
+    <GROUP id="{556C89DA-C8B9-7FB9-A145-BD49174572C5}" name="Source">
+      <FILE id="isOhyG" name="rtmidi_c.cpp" compile="1" resource="0" file="rtmidi-master/rtmidi_c.cpp"/>
+      <FILE id="DIabPX" name="rtmidi_c.h" compile="0" resource="0" file="rtmidi-master/rtmidi_c.h"/>
+      <FILE id="hfnaeM" name="RtMidi.cpp" compile="1" resource="0" file="rtmidi-master/RtMidi.cpp"/>
+      <FILE id="qYWLlo" name="RtMidi.h" compile="0" resource="0" file="rtmidi-master/RtMidi.h"/>
+      <FILE id="W2JF4K" name="usb_functions.h" compile="0" resource="0" file="Source/usb_functions.h"/>
+      <FILE id="R3C88J" name="usb_functions.cpp" compile="1" resource="0"
+            file="Source/usb_functions.cpp"/>
+      <FILE id="LkLU9E" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="mMHvCx" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="d9rUmW" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraCustomFrameworks="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreMIDI.framework&#10;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreAudio.framework"
+               frameworkSearchPaths="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreMIDI.framework&#10;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreAudio.framework"
+               extraCompilerFlags="-D__MACOSX_CORE__&#10;-Wl&#10;-ld-classic">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SFC-Mini_V4-FW-updater"
+                       customXcodeFlags="-D__MACOSX_CORE__" macOSDeploymentTarget="10.13"
+                       osxCompatibility="10.13 SDK"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SFC-Mini_V4-FW-updater"
+                       customXcodeFlags="-D__MACOSX_CORE__" macOSDeploymentTarget="10.13"
+                       osxCompatibility="10.13 SDK"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../modules"/>
+        <MODULEPATH id="juce_events" path="../modules"/>
+        <MODULEPATH id="juce_graphics" path="../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

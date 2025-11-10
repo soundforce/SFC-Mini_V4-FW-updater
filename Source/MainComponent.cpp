@@ -45,17 +45,23 @@ void MIDI_IN_CALLBACK( double deltatime, std::vector< unsigned char > *message, 
     }
 }
 
+void buttonClicked() // [9]
+{
+    cout << "button" << endl;
+    
+    juce::URL url("https://github.com/soundforce/SFC-Mini_V4-FW-updater");
+    url.launchInDefaultBrowser();
+}
+
 //==============================================================================
 MainComponent::MainComponent()
 {
-    setSize (600, 200);
+    setSize (600, 250);
     
     cout << "////////////////////////////////" << endl;
     cout << "SFC-Mini V4 firmware updater " << firmware_version << endl;
     cout << "////////////////////////////////" << endl
     << endl;
-    
-    startTimer(1000);
     
     addAndMakeVisible(titleLabel);
     titleLabel.setFont (juce::Font (24.0f, juce::Font::bold));
@@ -70,6 +76,12 @@ MainComponent::MainComponent()
     progressLabel.setJustificationType (juce::Justification::topLeft);
     progressLabel.setBounds (50,  40, getWidth() - 20,  200);
     
+    startTimer(1000);
+
+    addAndMakeVisible (link_button);
+    link_button.setBounds(20, getHeight()-40, 125, 25);
+    link_button.onClick = [this] { buttonClicked(); }; // [8]
+
     cout << "constructor" << endl;
     cout << "" << endl;
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+using namespace std;
 
 //==============================================================================
 /*
@@ -8,7 +9,7 @@
     your controls and content.
 */
 
-class MainComponent  : public juce::Component, private juce::Timer
+class MainComponent  : public juce::Component, private juce::Timer, private juce::URL
 {
 public:
     //==============================================================================
@@ -18,13 +19,14 @@ public:
     //==============================================================================
     void paint (juce::Graphics&) override;
     void resized() override;
-
+    
 private:
     //==============================================================================
     // Your private member variables go here...
     juce::Label titleLabel;
     juce::Label progressLabel;
-
+    juce::TextButton link_button{"Open source code"};
+        
     void timerCallback() final;
 
 
